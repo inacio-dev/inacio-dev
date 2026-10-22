@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="283" height="44" viewBox="0 0 283 44" role="img" aria-label="inaciorodrigues.dev.br">
+<title>inaciorodrigues.dev.br</title>
+
+<rect x=".5" y=".5" width="282" height="43" rx="22.0" fill="#fafafa" stroke="#e4e4e7"/>
+<circle cx="22.0" cy="22.0" r="15" fill="#0d9488" fill-opacity=".12"/>
+<g transform="translate(13.0 13.0) scale(.75)" fill="none" stroke="#0d9488" stroke-width="2"
+   stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></g>
+<text x="48" y="27.0" font-family="'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace" font-size="14" fill="#09090b" textLength="184.8" lengthAdjust="spacing">inaciorodrigues.dev.br</text>
+<g transform="translate(249 15.0) scale(.58)" fill="none" stroke="#a1a1aa" stroke-width="2.4"
+   stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></g>
+
+</svg>

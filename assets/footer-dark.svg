@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-label="inacio.dev — construindo software, hardware e infraestrutura">
+<title>inacio.dev — construindo software, hardware e infraestrutura</title>
+
+<defs><clipPath id="frame"><rect width="1200" height="170" rx="18"/></clipPath></defs>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="170" fill="#09090b"/>
+  <path d="M0 112 Q130 100 260 112 Q390 124 520 112 Q650 100 780 112 Q910 124 1040 112 Q1170 100 1300 112 Q1430 124 1560 112 Q1690 100 1820 112 V170 H0 Z" fill="#5eead4" fill-opacity="0.1"><animateTransform attributeName="transform" type="translate" values="0 0;-520 0" dur="14s" repeatCount="indefinite"/></path><path d="M0 124 Q100 114 200 124 Q300 134 400 124 Q500 114 600 124 Q700 134 800 124 Q900 114 1000 124 Q1100 134 1200 124 Q1300 114 1400 124 Q1500 134 1600 124 V170 H0 Z" fill="#5eead4" fill-opacity="0.16"><animateTransform attributeName="transform" type="translate" values="0 0;-400 0" dur="10s" repeatCount="indefinite"/></path><path d="M0 138 Q75 130 150 138 Q225 146 300 138 Q375 130 450 138 Q525 146 600 138 Q675 130 750 138 Q825 146 900 138 Q975 130 1050 138 Q1125 146 1200 138 Q1275 130 1350 138 Q1425 146 1500 138 V170 H0 Z" fill="#5eead4" fill-opacity="0.28"><animateTransform attributeName="transform" type="translate" values="0 0;-300 0" dur="7s" repeatCount="indefinite"/></path>
+</g>
+<rect x=".5" y=".5" width="1199" height="169" rx="18" fill="none" stroke="#27272a"/>
+<text x="600.0" y="50" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace" font-size="20" font-weight="700" fill="#fafafa"><tspan fill="#5eead4">inacio</tspan>.dev</text>
+<text x="600.0" y="78" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', 'DejaVu Sans Mono', monospace" font-size="14" fill="#a1a1aa">construindo software, hardware e infraestrutura</text>
+
+</svg>

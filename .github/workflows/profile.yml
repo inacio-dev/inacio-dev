@@ -1,0 +1,107 @@
+name: Perfil
+
+# Gera as imagens dinâmicas do README (3D, métricas e cobrinha) e publica na
+# branch `output`, sobrescrevendo-a a cada execução. Assim o `main` não acumula
+# commits automáticos e uma falha aqui mantém as imagens anteriores no ar.
+on:
+  schedule: [{ cron: "0 9 * * *" }] # diário, 06:00 BRT
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/profile.yml", ".github/profile-3d.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Contribuições em 3D
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d.json
+
+      - name: Métricas — linguagens
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics-languages.svg
+          output_action: none
+          base: ""
+          config_timezone: America/Fortaleza
+          extras_css: &brand-css |
+            h2, h3 { color: #14b8a6 !important; }
+            [fill="#9be9a8"] { fill: #99f6e4; }
+            [fill="#40c463"] { fill: #2dd4bf; }
+            [fill="#30a14e"] { fill: #14b8a6; }
+            [fill="#216e39"] { fill: #0f766e; }
+            .contribution.organization.s, .contribution.organization.a,
+            .contribution.organization.b, .contribution.organization.c {
+              color: #14b8a6; background-color: #14b8a61f; border-color: #14b8a6;
+            }
+          plugin_languages: yes
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
+
+      - name: Métricas — calendário isométrico
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics-isocalendar.svg
+          output_action: none
+          base: ""
+          config_timezone: America/Fortaleza
+          extras_css: *brand-css
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Métricas — contribuições em organizações
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics-notable.svg
+          output_action: none
+          base: ""
+          config_timezone: America/Fortaleza
+          extras_css: *brand-css
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_repositories: yes
+          plugin_notable_indepth: yes
+
+      - name: Cobrinha de contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-dark.svg?palette=github-dark&color_snake=#5eead4&color_dots=#1f1f23,#134e4a,#0f766e,#14b8a6,#5eead4
+            dist/snake-light.svg?palette=github-light&color_snake=#0d9488&color_dots=#e4e4e7,#ccfbf1,#5eead4,#14b8a6,#0f766e
+
+      - name: Reúne as imagens
+        run: |
+          sudo cp /metrics_renders/metrics-*.svg dist/
+          cp profile-3d-contrib/profile-3d-dark.svg profile-3d-contrib/profile-3d-light.svg dist/
+          sudo chown -R "$(id -u):$(id -g)" dist
+          ls -la dist
+          test "$(ls dist/*.svg | wc -l)" -eq 7
+
+      - name: Publica na branch output
+        uses: crazy-max/ghaction-github-pages@v5
+        with:
+          target_branch: output
+          build_dir: dist
+          jekyll: false
+          commit_message: "chore: atualiza imagens do perfil"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
