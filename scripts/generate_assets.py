@@ -311,11 +311,11 @@ PROJECTS = [
             "ferramentas internas, hoje na v2, com integração à OpenAI, sessão segura e circuit "
             "breaker.",
             ("TypeScript", "Next.js", "PostgreSQL", "OpenAI")),
-    Project("bcm-promotora", "landmark", "BCM Promotora", "Cliente · atual",
-            "em produção", True,
-            "Site institucional e sistema interno de propostas de crédito consignado, com "
-            "parceiros bancários e acompanhamento do fluxo comercial.",
-            ("Next.js", "TypeScript", "Tailwind CSS", "Auth", "Dashboard")),
+    Project("bcm-promotora", "landmark", "BCM Promotora", "04/2026 — 09/2026 · projeto sob demanda",
+            "concluído", False,
+            "Site de captação de leads, sistema interno de propostas de consignado e migração "
+            "da plataforma anterior, com 15.760 de 15.779 clientes importados e CPFs validados.",
+            ("Next.js", "Fastify", "Drizzle", "PostgreSQL", "Tailwind CSS")),
     Project("teleoperacao", "joystick", "Teleoperação com Force Feedback", "TCC · UFC · 2026",
             "publicado", False,
             "Veículo teleoperado com UDP de 1,94 ms de latência, vídeo a 29,9 FPS e force "

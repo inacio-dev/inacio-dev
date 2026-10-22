@@ -18,6 +18,7 @@ Sou **Inácio Rodrigues de Matos Galvão**, analista de sistemas sênior, desenv
 - ⚡ **B&Q Energia** · analista de sistemas sênior; lidero a validação técnica das features críticas e projetei a infraestrutura que atende uma empresa de cerca de 5 mil colaboradores
 - 🏭 **Grupo Argo** · projetos sob demanda: o SaaS Vertere Mind, com assistente de IA, e o SmartKitchen, controle de estoque multiempresa com app móvel
 - 🧠 **NeuroArq** · projetos sob demanda: site institucional multilíngue com CMS próprio e ferramentas internas integradas à OpenAI
+- 🏦 **BCM Promotora** · projeto sob demanda concluído: site de captação, sistema de propostas de consignado e migração da plataforma anterior
 - 🕹️ **TCC** · veículo teleoperado com force feedback, [publicado no repositório da UFC](https://repositorio.ufc.br/handle/riufc/87035) e exposto no Siará Tech Summit 2026
 - 🎼 **Symbra** · pesquisa voluntária de leitura de partituras para braille, para músicos cegos, financiada pelo Programa Centelha
 - 💬 Gosto de conversar sobre arquitetura, back-end, infraestrutura, IA aplicada e sistemas embarcados
@@ -57,7 +58,7 @@ Sou **Inácio Rodrigues de Matos Galvão**, analista de sistemas sênior, desenv
   <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/beq-energia-dark.svg"><img src="assets/projects/beq-energia-light.svg" width="49%" alt="B&Q Energia — Analista de Sistemas Sênior, desde 11/2024"></picture></a>
   <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/grupo-argo-dark.svg"><img src="assets/projects/grupo-argo-light.svg" width="49%" alt="Grupo Argo — projetos sob demanda, desde 08/2026"></picture></a>
   <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/neuroarq-dark.svg"><img src="assets/projects/neuroarq-light.svg" width="49%" alt="NeuroArq — projetos sob demanda, desde 03/2025"></picture></a>
-  <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/bcm-promotora-dark.svg"><img src="assets/projects/bcm-promotora-light.svg" width="49%" alt="BCM Promotora — cliente atual"></picture></a>
+  <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/bcm-promotora-dark.svg"><img src="assets/projects/bcm-promotora-light.svg" width="49%" alt="BCM Promotora — projeto sob demanda, 04/2026 a 09/2026"></picture></a>
   <a href="https://repositorio.ufc.br/handle/riufc/87035"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/teleoperacao-dark.svg"><img src="assets/projects/teleoperacao-light.svg" width="49%" alt="Teleoperação com Force Feedback — TCC, UFC, 2026"></picture></a>
   <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/symbra-dark.svg"><img src="assets/projects/symbra-light.svg" width="49%" alt="Symbra — pesquisa voluntária no Protecs, desde 06/2026"></picture></a>
 </p>
@@ -96,6 +97,7 @@ I'm **Inácio Rodrigues de Matos Galvão**, a senior systems analyst, full stack
 - ⚡ **B&Q Energia** · senior systems analyst; I lead the technical validation of critical features and designed the infrastructure serving a company of about 5,000 employees
 - 🏭 **Grupo Argo** · on-demand projects: Vertere Mind, a SaaS with an AI assistant, and SmartKitchen, multi-tenant inventory control with a mobile app
 - 🧠 **NeuroArq** · on-demand projects: a multilingual website with its own CMS and internal tools integrated with OpenAI
+- 🏦 **BCM Promotora** · completed on-demand project: lead capture website, payroll-loan proposal system and migration from the previous platform
 - 🕹️ **Thesis** · teleoperated vehicle with force feedback: 1.94 ms UDP latency, 29.9 FPS video and 97.2% force feedback accuracy
 - 🎼 **Symbra** · volunteer research on reading sheet music into braille for blind musicians
 - 🤖 **Portfolio** · [inaciorodrigues.dev.br](https://inaciorodrigues.dev.br/)
