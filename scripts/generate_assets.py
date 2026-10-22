@@ -191,9 +191,10 @@ def typing(t: Theme, x: float, y: float, roles: list[str], size: int = 22) -> st
 def header(t: Theme) -> str:
     w, h = 1200, 400
     roles = [
-        "Desenvolvedor Full Stack Sênior",
+        "Analista de Sistemas Sênior",
+        "Desenvolvedor Full Stack",
         "Engenheiro de Computação · UFC",
-        "Next.js · Node.js · Python · Kubernetes",
+        "TypeScript · Python · PostgreSQL · Docker",
         "software, hardware e infraestrutura",
         "do código à operação",
     ]
@@ -251,7 +252,7 @@ def header(t: Theme) -> str:
 </g>
 {wireframe(t, 960, 200, 128)}
 """
-    return svg_doc(w, h, body, "Inácio Rodrigues de Matos Galvão — Desenvolvedor Full Stack Sênior e Engenheiro de Computação")
+    return svg_doc(w, h, body, "Inácio Rodrigues de Matos Galvão — Analista de Sistemas Sênior, desenvolvedor full stack e engenheiro de computação")
 
 
 # ------------------------------------------------------------------------ cards
@@ -269,6 +270,9 @@ ICONS = {
                 '<line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/>'
                 '<line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/>',
     "arrow": '<path d="M7 7h10v10"/><path d="M7 17 17 7"/>',
+    "factory": '<path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/>'
+               '<path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/>',
+    "music": '<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>',
     "globe": '<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>'
              '<path d="M2 12h20"/>',
     "mail": '<rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>',
@@ -290,26 +294,39 @@ class Project:
 
 
 PROJECTS = [
-    Project("teleoperacao", "joystick", "Teleoperação com Force Feedback", "TCC · UFC · 2026",
-            "concluído", False,
-            "Controle remoto em tempo real com UDP de baixa latência, integrando Raspberry Pi, "
-            "ESP32, telemetria, vídeo ao vivo e interface háptica com force feedback.",
-            ("Python", "Raspberry Pi", "ESP32", "UDP", "OpenCV")),
-    Project("beq-energia", "zap", "Plataformas B&Q Energia", "2024 — atual · Dev. de Sistemas Sênior",
+    Project("beq-energia", "zap", "B&Q Energia", "11/2024 — atual · Analista de Sistemas Sênior",
             "em produção", True,
-            "Aplicações críticas de inspeções, gestão de colaboradores e metas, em arquitetura "
-            "multi-cluster Kubernetes com alta disponibilidade e práticas de DevOps.",
-            ("TypeScript", "Next.js", "Node.js", "PostgreSQL", "Kubernetes")),
-    Project("neuroarq", "graduation-cap", "NeuroArq Academy", "2024 — atual · Full Stack",
+            "Lidero a validação técnica das features críticas. Projetei e desenvolvi o Conecta, "
+            "portal do fornecedor integrado ao Protheus, e a plataforma de segurança do trabalho "
+            "com OIDC próprio e gRPC.",
+            ("TypeScript", "Fastify", "Next.js", "PostgreSQL", "gRPC")),
+    Project("grupo-argo", "factory", "Grupo Argo", "08/2026 — atual · projetos sob demanda",
+            "em andamento", True,
+            "O SaaS Vertere Mind, com assistente de IA, do edital Smart Factory (BNDES/SENAI), "
+            "e o SmartKitchen, controle de estoque multiempresa com app móvel.",
+            ("Django", "PostgreSQL", "Next.js", "React Native", "Fastify")),
+    Project("neuroarq", "graduation-cap", "NeuroArq", "03/2025 — atual · projetos sob demanda",
             "em produção", True,
-            "Desenvolvimento e evolução das plataformas educacionais da NeuroArq, com foco em "
-            "aplicações performáticas, pagamentos e soluções internas modernas.",
-            ("TypeScript", "Next.js", "PostgreSQL", "Stripe")),
+            "Projetei e desenvolvi o novo site institucional, multilíngue e com CMS próprio, e as "
+            "ferramentas internas, hoje na v2, com integração à OpenAI, sessão segura e circuit "
+            "breaker.",
+            ("TypeScript", "Next.js", "PostgreSQL", "OpenAI")),
     Project("bcm-promotora", "landmark", "BCM Promotora", "Cliente · atual",
             "em produção", True,
             "Site institucional e sistema interno de propostas de crédito consignado, com "
             "parceiros bancários e acompanhamento do fluxo comercial.",
             ("Next.js", "TypeScript", "Tailwind CSS", "Auth", "Dashboard")),
+    Project("teleoperacao", "joystick", "Teleoperação com Force Feedback", "TCC · UFC · 2026",
+            "publicado", False,
+            "Veículo teleoperado com UDP de 1,94 ms de latência, vídeo a 29,9 FPS e force "
+            "feedback com 97,2% de precisão, por R$ 1.300 contra mais de R$ 50 mil das "
+            "soluções comerciais.",
+            ("Python", "Raspberry Pi", "Arduino", "UDP", "OpenCV")),
+    Project("symbra", "music", "Symbra", "06/2026 — atual · Protecs · voluntário",
+            "pesquisa", True,
+            "Leitura óptica de partituras (OMR) em imagem e PDF para braille, voltada a músicos "
+            "cegos. Projeto financiado pelo Programa Centelha (FUNCAP e FINEP).",
+            ("OMR", "Visão computacional", "Braille", "Acessibilidade")),
 ]
 
 
