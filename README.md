@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://inaciorodrigues.dev.br/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/site-dark.svg"><img src="assets/contact/site-light.svg" height="44" alt="Portfólio: inaciorodrigues.dev.br"></picture></a>
   <a href="https://www.linkedin.com/in/inacio-rodrigues-dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/linkedin-dark.svg"><img src="assets/contact/linkedin-light.svg" height="44" alt="LinkedIn: in/inacio-rodrigues-dev"></picture></a>
-  <a href="mailto:inaciormgalvao@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/email-dark.svg"><img src="assets/contact/email-light.svg" height="44" alt="E-mail: inaciormgalvao@gmail.com"></picture></a>
+  <a href="mailto:inaciormgalvao@outlook.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/contact/email-dark.svg"><img src="assets/contact/email-light.svg" height="44" alt="E-mail: inaciormgalvao@outlook.com"></picture></a>
 </p>
 
 ## 👨‍💻 Sobre mim
